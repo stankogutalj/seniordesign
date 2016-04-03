@@ -1,0 +1,225 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap-responsive.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap-responsive.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/carousel.css' %}" />
+
+<!--<img src="img/keelcooler.jpg" align="center"><br><br>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Senior Design | Cummins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Keel Cooler Optimization Tool</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="contributors.html">Meet The Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="documents.html">Documents</a></li>
+
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="{% static "img/CUMMINS1.jpg" %}"" alt="">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img src="{% static "img/CUMMINS2.jpg" %}"" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p class="lead"></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+ <img src="{% static "img/CUMMINS3.jpg" %}"" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p class="lead"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+      <!-- Three columns of text below the carousel -->
+
+
+
+      <!-- START THE FEATURETTES
+
+      <hr class="featurette-divider">-->
+
+     <div class="row">
+    <h2 >PROJECT OVERVIEW</h2>
+            <!--<div class="row">-->
+            <div class="col-md-8">
+              <p class="lead"><br>Modern ships and boats rely upon high-powered propulsion systems in order to successfully navigate through their respective environments. The delivered power of engines for typical commercial marine vessels ranges between 230-2700 hp (169-2013 kW)1. In order for these vessels to function properly, heat must be dissipated effectively in order to achieve the optimal efficiency for sailing conditions.  
+              <br>
+             There are two main types of cooling systems for marine engines; the first is known as a raw water system and the second is known as the freshwater (closed) cooling system. In a raw water system, surrounding water is drawn from the outside of the ship and is circulated through the engine block and then expelled from the exhaust. This is hazardous to the system in both salt- and fresh-water application due to the corrosiveness of salt on the water pump impellers and the risk of foreign contaminants which could lead the system to foul. The engine components risk early failure and may lead to an engine overhaul before the vessel operator’s expected to.<br><br>
+            The second type of cooling system is known as a closed cooling system. These systems do not employ water as a direct cycling fluid rather, rather piping is used to separate the coolant and the surrounding medium. Some systems function similar to the radiator in automobiles where coolant is pumped through one side of a heat exchanger and raw water is pumped through another in order to dissipate heat. Another type of closed cooling system removes the need for a heat exchanger by employing an external set of pipes which protrude from the bottom of the vessel to exchange heat directly with the surrounding water. Keel coolers operate by taking advantage of the surrounding water as an endless heat sink for a vessel’s heat transfer fluid. Due to the risk of fouling from various contaminants contained in the water medium, these coolers typically do not run ocean water directly through the power cycle, but rather exchange heat via convection through external tubing between the engine coolant and the surrounding medium. This process is illustrated in Figure 1, explaining just how this process takes place. A pump draws coolant from the thermostat and sends it through and expansion valve, which sends coolant into the keel cooler at the bottom of the vessel. The heated fluid moves through a series of highly conductive pipes which remove the heat via convection with the heat sink. The cod coolant is finally pumped back into the engine via a cooling pump. This process eliminates the need for a heat exchanger, and other components vital for closed cooling systems.<br><br>
+            <div align="center"> 
+			<img src="{% static "img/keelcooler.jpg" %}"" align="center"><br><br>
+			</div>
+            Cummins Marine is one of the different specialized markets of Cummins Inc. which specializes in the “Marinization” of engines and the design of new components to allow the current Cummins engine line survive in marine applications. Customers often times ask the Application Engineers to ensure the engine selected will work properly with the vessel it is going to be installed in. This includes the sanity check of ensuring that the keel cooler will provide the correct cooling for the engine. These factors are important to consider since the vessel must pass an Installation Quality Assurance Review in order to meet warranty. In order to meet customer’s requirements, Cummins Marine makes use of a web-based optimization tool which allows the Application Engineers to predict whether or not a particular keel cooler design will successfully meet the vessels’ requirements. The program operates on user-inputted parameters such as keel size, engine power, and temperature range. These values then predict whether the cooler will pass or fail based on extreme operating conditions. Although the tool has been in service for a long time, it has several limitations. The tool only predicts keel cooler systems which are made from steel and does not offer an option to optimize the design. The program lacks feedback and is outdated as a user interface. The goal of the Keel Cooler Optimization Tool Senior Design Project is to create a tool that adds feedback alongside the pass-fail conditions. The program will suggest improvements in the design of the keel cooler based on a thermodynamic analysis. Such improvements can range from material selection, pipe configuration as well as an optimal temperature range of operating conditions. The successful implementation of this tool will result in an increase in company profit and customer satisfaction. With a program which successfully predicts improvements in keel cooler design, boat builders will be able to build the keel coolers with confidence knowing it will be more efficient and optimize the performance of their engine and work in different nautical waters. <br><br>
+			        <legend>Text input</legend>
+        <p>
+          <label>Text box</label>
+          <input type = "text"
+                 id = "myText"
+                 value = "text here" />
+        </p>
+        <p>
+
+		   To achieve this goal, extensive background research must be conducted on the variables important to the design of a keel cooler. Once the group has a full understanding of the analysis process, the method for creating this tool must be decided upon; this includes the programming language, program structure, user interface and a means for testing the accuracy of the program. The group must show sufficient understanding of the thermal design process and develop a product that is user-friendly, intuitive and provides meaningful feedback to the end user.</p>
+
+            </div>
+            <div class="col-md-4">
+            </div>
+
+            <div class="featurette">
+            </div>
+
+
+			
+			     <div class="row">
+    <h2 >KEEL COOLER PROGRAM</h2>
+            <!--<div class="row">-->
+            <div class="col-md-8">
+              <p class="lead"><br>
+            In order to design and write a successful program there are three primary considerations that the program designer must consider: Choosing the right programming language, identifying the user, and structuring the program correctly and effectively.  In the design on the keel cooler optimization tool, careful consideration was given to these steps in order to maximize the tools effectiveness in servicing the applications engineers at Cummins Marine.  
+The choices for the programming language were based on a comprehensive list of the suitable languages that the members of the project group had exposure to.  In order to select a language for consideration, the project group agreed upon options that they felt familiar with, had the capability to do mild computing, and had useful functions for implementation.  The three final choices were reduced to C programming, MATLAB, and Java.  A decision matrix was implemented in order to make the proper selection for the task.  The group chose four main attributes and weighed them in order of importance to evaluate their ranks.  The judging criteria was knowledge (the groups familiarity with the language), structure (does the program contain useful functions to structure a logic based selection system), aesthetics (user friendly interface), and relevance (how universal is the language).  The attributes were ranked from 1 to 10 and were given a weighted multiplier with knowledge and structure given 60% and 20% weights respectively.  These values were added up to produce a score.  C programming ultimately prevailed to its superiority in knowledge, structure, and relevance.  The decision matrix can be seen in Table 1.
+  <p class="lead"> 
+	<div align="center"> 
+	<img src="{% static "img/decmatrix.jpg" %}"" align="center"><br><br>
+	</div>
+ <br>              <p class="lead">
+The second step of the design process was to identify the user in order to satisfy their needs in a program.  After a coordinated sponsor meeting, the team was able to identify the primary users as application engineers as well as shipyard workers.  After further inspection into the uses of the program, the design team concluded that the two primary uses of the optimization tool are for the validation and design of keel coolers.  This led to the implementation of two main program modes, a verify mode and a design mode.  The ‘verify’ user is one that has a premade keel cooler or keel cool design and wishes to simply evaluate whether their model will pass or fail.  If the users design passes, the program would indicate so. If the users design fails, the program would allow the option of providing feedback in order to produce a passing design.  An emphasis was placed on useful feedback of the program, providing the user with only the information that they seek, optimizing the user interface.  The design mode of the program offers an alternative approach for a user who is seeking the optimal size for their particular parameters.  The user would provide constraints such as available material, hull size, amongst others and the program would evaluate the correct size (if possible) for a passing keel cooler design.
+	 <br>The program would use the same input parameters as the current validation tool, while adding the variability of adding design parameters for additional analysis.  Figure 6 shows the specification sheet for the current tool.
+ <br>              <p class="lead">
+Several considerations were given to the program structure.  In order to minimize run time and maximize coding efficiency, the program was structured with a main function with conditionally accessed sub functions.  The program will open up from the start and prompt the user to choose whether they would enter design or verify mode.  The selection decisions are prompted by the use of switch statements that access sub-functions depending on the number that the user enters.  If the user enters the analyze mode, the engine selection tool will ask the user for their engine selection.  Depending on their response, the program will access separate functions which will store the parameters corresponding to their selection.  Following the engine selection, the user will enter their coolant selection followed by their channel size dimensions.  The program takes the information stored from these inputs and calculates the minimal cooler length and heat dissipation and compares it to the users input.  If the user’s cooler parameters correspond to a passing design, the program will display a message indicating passing and the program will terminate.  If the user enters parameters that prompt a failing condition, the user will be informed as well as given the option to enter the programs design mode.  The design mode will invoke a similar structure to the verification mode, with the exception that the user will be able to select additional parameters such as boat hull size that constrain their design.  The program will evaluate the user’s criteria and generate design parameters that will provide a passing condition.  Because of the vast number of sub-functions the program employs, most of the variables will be redefined by the use of pointers.  This reduces the number of variables and the memory required by the program minimizing run time.  Figure 7 shows a simplified flow chart for the Keel Cooler Optimization Tool.
+
+<div align="center">  
+ <img src="{% static "img/flowchart.jpg" %}"" align="center"><br><br>
+	</div>
+
+Figure 7: Flow Chart for Keel Cooler Optimization Tool
+
+            
+            </div>
+            <div class="col-md-4">
+            </div>
+
+            <div class="featurette">
+            </div>
+
+    
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="../assets/js/holder/holder.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

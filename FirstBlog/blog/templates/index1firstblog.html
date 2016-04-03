@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css">
+	<link href="images/favicon.ico" rel="shortcut icon">
+	<title>LOUCE'S FIRST BLOG</title>
+</head>
+
+<body>
+<div class="container">
+	<h1>First Blog</h1>
+	
+	{% for post in entries %}
+		<h2>{{ post.title }}</h2>
+		<h3>Posted on {{ post.timestamp }} by {{ post.author }}</h3>
+		<p>{{ post.bodytext }}</p>
+	{% endfor %}
+	
+</div>
+
+</body>
+</html>

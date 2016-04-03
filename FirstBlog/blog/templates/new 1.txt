@@ -1,0 +1,11 @@
+def QSK19(flowpaths ):
+	Qout= 27273/flowpaths 
+	
+	
+	return(Qout) 
+	
+def steel():
+	
+	
+	
+	return(Qout) 

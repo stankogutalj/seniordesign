@@ -1,0 +1,17 @@
+{% load staticfiles %}
+{% csrf_token %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap-responsive.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap-responsive.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'blog/carousel.css' %}" />
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+<body>
+  <h1>Your Engine is {{ Engine }}</h1>
+  <h1>Your Coolant is {{ Coolant }}</h1>
+</body>
+</html>
